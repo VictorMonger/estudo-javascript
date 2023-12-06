@@ -41,4 +41,3 @@ client2.setWithdrawal(15000);
 
 console.log(client1);
 console.log(client2);
-
