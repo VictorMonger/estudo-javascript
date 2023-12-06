@@ -29,7 +29,7 @@ function calculateAgeIn(birthDate){
   return age;
 }
 
-const birthDate = new Date('2000/11/30');
+const birthDate = new Date('2000/05/15');
 
 const age = calculateAgeIn(birthDate)
 
