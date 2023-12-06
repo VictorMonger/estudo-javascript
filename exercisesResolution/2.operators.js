@@ -1,15 +1,23 @@
-const X = 486
-const Y = 60
+const getPlus = (number1, number2) => {
+  return number1 + number2
+}
 
-const plus = X + Y
-const minus = X - Y
-const multi = X * Y
-const div = X / Y
+const getMinus = (number1, number2) => {
+  return number1 - number2
+}
 
-console.log('A soma entre X e Y é ' + plus);
+const getMulti = (number1, number2) => {
+  return number1 * number2
+}
 
-console.log('A subtração entre X e Y é ' + minus);
+const getDiv = (number1, number2) => {
+  return number1 / number2
+}
 
-console.log('A multiplicação entre X e Y é ' + multi);
+console.log(`A soma entre esses números é ${getPlus(51, 17)}`);
 
-console.log('A divisão entre X e Y é ' + div);
+console.log(`A subtração entre esses números é ${getMinus(51, 17)}`);
+
+console.log(`A Multiplicação entre esses números é ${getMulti(51, 17)}`);
+
+console.log(`A divisão entre esses números é ${getDiv(51, 17)}`);
