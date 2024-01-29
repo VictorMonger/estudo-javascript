@@ -15,7 +15,7 @@ class BankAccount {
 
   getBankStatement() {
     this.bankStatement.forEach(operation => {
-      console.log(`${operation.type} - value: ${operation.ammount} - New balance: ${operation.balance}`)
+      console.log(`${operation.type} - value: ${operation.amount} - New balance: ${operation.balance}`)
     });
   }
 
@@ -26,7 +26,7 @@ class BankAccount {
     this.balance = this.balance - value;
     this.addBankStatement({
       type: 'withdrawal', 
-      ammount: value, 
+      amount: value, 
       balance: this.balance
       
     });
@@ -39,7 +39,7 @@ class BankAccount {
     this.balance = this.balance + value;
     this.addBankStatement({
       type: 'deposit', 
-      ammount: value, 
+      amount: value, 
       balance: this.balance
     });
   }
@@ -48,11 +48,3 @@ class BankAccount {
 const client1 = new BankAccount('Victor Gabriel dos Santos Monger', '23443200', 1000);
 const client2 = new BankAccount('Diogo Felipe Stefano Monger', '24554200', 30000);
 
-client1.withdrawal(1000);
-client1.deposit(2000)
-
-client2.deposit(11000);
-client2.withdrawal(15000);
-
-console.log(client1)
-console.log(client2)
